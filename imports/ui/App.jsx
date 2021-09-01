@@ -1,11 +1,15 @@
 import React from "react";
 
-import GlobalStyles from "/imports/ui/styles/globals";
+import { Routers } from "./router/router";
+
+import GlobalStyles from "./styles/globals";
 
 export const App = () => (
 	<>
-		<GlobalStyles />
+		<Routers>
+			<GlobalStyles />
 
-		<h1>Welcome to Meteor!</h1>
+			<h1>Welcome to Meteor!</h1>
+		</Routers>
 	</>
 );
