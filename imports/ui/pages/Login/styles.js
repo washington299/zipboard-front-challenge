@@ -27,10 +27,15 @@ export const Title = styled.h1`
 
 export const Form = styled.form`
 	max-width: 420px;
+	width: 100%;
 	padding: var(--small);
 	background-color: var(--white);
 	border-radius: var(--extra-small);
 	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+`;
+
+export const FormField = styled.div`
+	margin-bottom: var(--small);
 `;
 
 export const Input = styled.input`
@@ -38,7 +43,6 @@ export const Input = styled.input`
 
 	width: 100%;
 	padding: var(--small);
-	margin-bottom: var(--small);
 `;
 
 export const SignInButton = styled.button`
@@ -65,4 +69,10 @@ export const SignUpButton = styled.button`
 	font-size: var(--small);
 	background-color: var(--secondary-color);
 	color: var(--white);
+`;
+
+export const ErrorMessage = styled.span`
+	font-size: 14px;
+	margin-bottom: var(--small);
+	color: var(--red);
 `;
