@@ -6,10 +6,7 @@ import GlobalStyles from "./styles/globals";
 
 export const App = () => (
 	<>
-		<Routers>
-			<GlobalStyles />
-
-			<h1>Welcome to Meteor!</h1>
-		</Routers>
+		<GlobalStyles />
+		<Routers />
 	</>
 );
