@@ -13,7 +13,9 @@ export default createGlobalStyle`
 		--secondary-color: #36A420;
 
 		--gray: #DDDFE2;
+		--dark-gray: #AAAAAA;
 		--red: #F02849;
+		--white: #ffffff;
 
 		--font-extra-light: 400;
 		--font-light: 500;
