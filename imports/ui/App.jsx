@@ -1,7 +1,11 @@
 import React from "react";
 
+import GlobalStyles from "/imports/ui/styles/globals";
+
 export const App = () => (
-	<div>
+	<>
+		<GlobalStyles />
+
 		<h1>Welcome to Meteor!</h1>
-	</div>
+	</>
 );
