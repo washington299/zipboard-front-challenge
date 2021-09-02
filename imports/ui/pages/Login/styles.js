@@ -72,7 +72,9 @@ export const SignUpButton = styled.button`
 `;
 
 export const ErrorMessage = styled.span`
+	display: block;
 	font-size: 14px;
 	margin-bottom: var(--small);
 	color: var(--red);
+	text-align: ${({ alignCenter }) => (alignCenter ? "center" : "start")};
 `;
