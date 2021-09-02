@@ -1,6 +1,7 @@
+import { Meteor } from "meteor/meteor";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import * as S from "./styles";
 
@@ -13,6 +14,8 @@ export const SignUp = () => {
 		formState: { errors },
 	} = useForm();
 
+	const history = useHistory();
+
 	const onSubmit = values => {
 		const { username, email, password, confirm_password } = values;
 
@@ -20,6 +23,15 @@ export const SignUp = () => {
 			setSignupErrorMessage("Passwords does not match");
 			return;
 		}
+
+		Meteor.call("users.insert", { username, email, password }, (error, result) => {
+			if (result) {
+				setSignupErrorMessage(result);
+				return;
+			}
+
+			history.push("/login");
+		});
 	};
 
 	return (
