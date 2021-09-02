@@ -1,7 +1,7 @@
 import { Meteor } from "meteor/meteor";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 import * as S from "./styles";
 
@@ -54,7 +54,9 @@ export const Login = () => {
 
 				<S.Line />
 
-				<S.SignUpButton>Create account</S.SignUpButton>
+				<Link to="/signup">
+					<S.SignUpButton>Create account</S.SignUpButton>
+				</Link>
 			</S.Form>
 		</S.Wrapper>
 	);
