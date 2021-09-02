@@ -24,7 +24,7 @@ export const SignUp = () => {
 			return;
 		}
 
-		Meteor.call("users.insert", { username, email, password }, (error, result) => {
+		Meteor.call("users.insert", { username, email, password }, (_error, result) => {
 			if (result) {
 				setSignupErrorMessage(result);
 				return;

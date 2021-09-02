@@ -19,13 +19,13 @@ export const Login = () => {
 	const onSubmit = values => {
 		const { email, password } = values;
 
-		Meteor.loginWithPassword(email, password, callback => {
-			if (!callback) {
+		Meteor.loginWithPassword(email, password, error => {
+			if (!error) {
 				history.push("/");
 				return;
 			}
 
-			setLoginErrorMessage(callback.reason);
+			setLoginErrorMessage(error.reason);
 		});
 	};
 

@@ -3,6 +3,8 @@ import { useTracker } from "meteor/react-meteor-data";
 import React from "react";
 import { useHistory } from "react-router-dom";
 
+import { Header } from "../../components/Header";
+
 export const Home = () => {
 	const user = useTracker(() => Meteor.user());
 
@@ -12,5 +14,10 @@ export const Home = () => {
 		history.push("/login");
 	}
 
-	return <div>Index</div>;
+	return (
+		<>
+			<Header email={user?.emails[0]?.address || ""} />
+			<div>Index</div>
+		</>
+	);
 };
