@@ -16,6 +16,7 @@ export default createGlobalStyle`
 		--dark-gray: #AAAAAA;
 		--red: #F02849;
 		--white: #ffffff;
+		--black: #000000;
 
 		--font-extra-light: 400;
 		--font-light: 500;
