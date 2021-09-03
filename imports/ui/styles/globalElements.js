@@ -1,4 +1,11 @@
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
+
+export const Container = styled.div`
+	max-width: 1080px;
+	width: 100%;
+	margin: auto;
+	padding: var(--small);
+`;
 
 export const InputDefaultStyles = css`
 	font-size: var(--small);
