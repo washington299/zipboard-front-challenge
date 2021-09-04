@@ -34,15 +34,16 @@ import * as S from "./styles";
 export const Feed = () => {
 	const posts = useTracker(() => PostsCollection.find({}).fetch());
 
-	console.log(posts);
+	// console.log(posts);
 
 	return (
 		<S.Wrapper>
 			<S.Title>Feed</S.Title>
 
-			{posts.map(({ email, text, comments }) => (
+			{posts.map(({ _id, email, text, comments }) => (
 				<Post
-					key={`${email} - ${text}`}
+					key={_id}
+					id={_id}
 					img={"https://www.w3schools.com/howto/img_avatar.png"}
 					email={email}
 					text={text}
