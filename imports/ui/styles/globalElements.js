@@ -7,6 +7,12 @@ export const Container = styled.div`
 	padding: var(--small);
 `;
 
+export const Line = styled.div`
+	width: 100%;
+	height: 1px;
+	background-color: var(--gray);
+`;
+
 export const InputDefaultStyles = css`
 	font-size: var(--small);
 	border: 1px solid var(--gray);

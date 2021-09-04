@@ -55,12 +55,6 @@ export const SignInButton = styled.button`
 	color: var(--white);
 `;
 
-export const Line = styled.div`
-	width: 100%;
-	height: 1px;
-	background-color: var(--gray);
-`;
-
 export const SignUpButton = styled.button`
 	${ButtonDefaultStyles};
 

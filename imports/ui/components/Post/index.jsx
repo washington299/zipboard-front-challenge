@@ -3,20 +3,22 @@ import { MdSend } from "react-icons/md";
 
 import { Comment } from "../Comment";
 
+import * as GE from "../../styles/globalElements";
 import * as S from "./styles";
 
 export const Post = ({ img, email, text, comments }) => {
 	return (
 		<S.Wrapper>
 			<S.Content>
-				<S.Image src={img} />
+				<S.Image src={img} alt="Avatar" />
 				<div>
 					<S.Email>Email: {email}</S.Email>
-					<S.Line />
+					<GE.Line />
 					<S.Description>{text}</S.Description>
 				</div>
 			</S.Content>
-			<S.Line />
+
+			<GE.Line />
 
 			<S.CommentArea>
 				<S.MyComment>

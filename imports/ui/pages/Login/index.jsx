@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useHistory, Link } from "react-router-dom";
 
+import * as GE from "../../styles/globalElements";
 import * as S from "./styles";
 
 export const Login = () => {
@@ -52,7 +53,7 @@ export const Login = () => {
 
 				{loginErrorMessage && <S.ErrorMessage alignCenter>{loginErrorMessage}</S.ErrorMessage>}
 
-				<S.Line />
+				<GE.Line />
 
 				<Link to="/signup">
 					<S.SignUpButton>Create account</S.SignUpButton>

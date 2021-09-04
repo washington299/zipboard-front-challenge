@@ -30,12 +30,6 @@ export const Email = styled.strong`
 	margin-bottom: var(--extra-small);
 `;
 
-export const Line = styled.div`
-	width: 100%;
-	height: 1px;
-	background-color: var(--dark-gray);
-`;
-
 export const Description = styled.p`
 	margin: var(--small) 0;
 `;
