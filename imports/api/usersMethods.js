@@ -11,6 +11,6 @@ Meteor.methods({
 		if (Accounts.findUserByUsername(username)) return "Username already exists";
 		if (Accounts.findUserByEmail(email)) return "E-mail already exists";
 
-		Accounts.createUser({ email, password, createdAt: new Date() });
+		Accounts.createUser({ username, email, password, createdAt: new Date() });
 	},
 });
