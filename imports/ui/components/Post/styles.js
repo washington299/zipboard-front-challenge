@@ -50,17 +50,25 @@ export const MyComment = styled.div`
 
 	img {
 		margin-right: var(--extra-small);
+		border-radius: 50%;
 	}
 
-	textarea {
-		${InputDefaultStyles};
-
+	input {
 		width: 100%;
-		padding: 0 var(--small);
-		vertical-align: middle;
-		resize: none;
-		border-radius: 30px;
+		border: none;
+		outline: none;
 	}
+`;
+
+export const CommentWrapper = styled.div`
+	${InputDefaultStyles};
+
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 var(--extra-small);
+
+	border-radius: 30px;
 `;
 
 export const CommentsList = styled.div`

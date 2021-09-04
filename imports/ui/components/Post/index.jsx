@@ -1,4 +1,5 @@
 import React from "react";
+import { MdSend } from "react-icons/md";
 
 import { Comment } from "../Comment";
 
@@ -20,7 +21,10 @@ export const Post = ({ img, email, text, comments }) => {
 			<S.CommentArea>
 				<S.MyComment>
 					<img src={img} width={40} height={40} />
-					<textarea placeholder="Type a comment..." />
+					<S.CommentWrapper>
+						<input placeholder="Type a comment..." />
+						<MdSend size={25} color="#166FE5" style={{ cursor: "pointer" }} />
+					</S.CommentWrapper>
 				</S.MyComment>
 
 				<S.CommentsList>
