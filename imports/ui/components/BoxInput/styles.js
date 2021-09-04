@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
-import { InputDefaultStyles, ButtonDefaultStyles } from "../../styles/globalElements";
+import {
+	InputDefaultStyles,
+	ButtonDefaultStyles,
+	BoxDefaultStyles,
+} from "../../styles/globalElements";
 
 export const Wrapper = styled.section`
+	${BoxDefaultStyles};
+
 	width: 100%;
-
-	padding: var(--small);
-
-	background-color: var(--white);
-	border-radius: var(--extra-small);
-	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
 `;
 
 export const Content = styled.div`

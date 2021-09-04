@@ -21,6 +21,14 @@ export const Line = styled.div`
 	background-color: var(--gray);
 `;
 
+export const BoxDefaultStyles = css`
+	padding: var(--small);
+
+	background-color: var(--white);
+	border-radius: var(--extra-small);
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+`;
+
 export const InputDefaultStyles = css`
 	font-size: var(--small);
 	border: 1px solid var(--gray);
