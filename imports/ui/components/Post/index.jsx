@@ -5,6 +5,7 @@ import { MdSend } from "react-icons/md";
 
 import { CommentsCollection } from "../../../api/commentsCollection";
 
+import { PostInformation } from "../PostInformation";
 import { Comment } from "../Comment";
 
 import * as GE from "../../styles/globalElements";
@@ -26,19 +27,7 @@ export const Post = ({ id, email, text }) => {
 
 	return (
 		<S.Wrapper>
-			<S.Content>
-				<GE.Image
-					src={"https://www.w3schools.com/howto/img_avatar.png"}
-					alt="Avatar"
-					width={60}
-					height={60}
-				/>
-				<div>
-					<S.Email>{email}</S.Email>
-					<GE.Line />
-					<S.Description>{text}</S.Description>
-				</div>
-			</S.Content>
+			<PostInformation email={email} text={text} />
 
 			<GE.Line />
 

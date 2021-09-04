@@ -9,26 +9,11 @@ export const Wrapper = styled.section`
 	margin-bottom: var(--large);
 `;
 
-export const Content = styled.div`
-	width: 100%;
-
-	display: flex;
-`;
-
 export const Image = styled.img`
 	width: 60px;
 	height: 60px;
 	margin-right: var(--small);
 	border-radius: 50%;
-`;
-
-export const Email = styled.strong`
-	display: block;
-	margin-bottom: var(--extra-small);
-`;
-
-export const Description = styled.p`
-	margin: var(--small) 0;
 `;
 
 export const CommentArea = styled.div`
