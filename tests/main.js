@@ -1,20 +1,20 @@
 import assert from "assert";
 
 describe("zipboard", function () {
-  it("package.json has correct name", async function () {
-    const { name } = await import("../package.json");
-    assert.strictEqual(name, "zipboard");
-  });
+	it("package.json has correct name", async function () {
+		const { name } = await import("../package.json");
+		assert.strictEqual(name, "zipboard");
+	});
 
-  if (Meteor.isClient) {
-    it("client is not server", function () {
-      assert.strictEqual(Meteor.isServer, false);
-    });
-  }
+	if (Meteor.isClient) {
+		it("client is not server", function () {
+			assert.strictEqual(Meteor.isServer, false);
+		});
+	}
 
-  if (Meteor.isServer) {
-    it("server is not client", function () {
-      assert.strictEqual(Meteor.isClient, false);
-    });
-  }
+	if (Meteor.isServer) {
+		it("server is not client", function () {
+			assert.strictEqual(Meteor.isClient, false);
+		});
+	}
 });
