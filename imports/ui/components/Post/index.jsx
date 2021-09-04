@@ -5,7 +5,7 @@ import { CommentsCollection } from "../../../api/commentsCollection";
 
 import { PostInformation } from "../PostInformation";
 import { PostMyComment } from "../PostMyComment";
-import { Comment } from "../Comment";
+import { PostComment } from "../PostComment";
 
 import * as GE from "../../styles/globalElements";
 import * as S from "./styles";
@@ -24,7 +24,7 @@ export const Post = ({ id, email, text }) => {
 
 				<S.CommentsList>
 					{comments.map(({ _id, email, comment }) => (
-						<Comment
+						<PostComment
 							key={_id}
 							img={"https://www.w3schools.com/howto/img_avatar.png"}
 							email={email}
