@@ -23,12 +23,13 @@ export const Post = ({ id, email, text }) => {
 				<PostMyComment id={id} />
 
 				<S.CommentsList>
-					{comments.map(({ _id, email, comment }) => (
+					{comments.map(({ _id, email, comment }, index) => (
 						<PostComment
 							key={_id}
 							img={"https://www.w3schools.com/howto/img_avatar.png"}
 							email={email}
 							text={comment}
+							noMarginInLastComment={comments.length - 1 === index}
 						/>
 					))}
 				</S.CommentsList>
