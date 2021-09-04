@@ -6,6 +6,7 @@ export const Wrapper = styled.section`
 	${BoxDefaultStyles};
 
 	width: 100%;
+	margin-bottom: var(--large);
 `;
 
 export const Content = styled.div`
