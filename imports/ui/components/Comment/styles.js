@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Comment = styled.div`
 	display: flex;
-	margin-bottom: var(--small);
 
 	img {
 		border-radius: 50%;

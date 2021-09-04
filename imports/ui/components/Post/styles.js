@@ -32,7 +32,7 @@ export const Description = styled.p`
 `;
 
 export const CommentArea = styled.div`
-	margin: var(--small) 0;
+	margin-top: var(--small);
 `;
 
 export const MyComment = styled.div`

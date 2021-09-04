@@ -34,7 +34,7 @@ export const Post = ({ id, email, text }) => {
 					height={60}
 				/>
 				<div>
-					<S.Email>Email: {email}</S.Email>
+					<S.Email>{email}</S.Email>
 					<GE.Line />
 					<S.Description>{text}</S.Description>
 				</div>
