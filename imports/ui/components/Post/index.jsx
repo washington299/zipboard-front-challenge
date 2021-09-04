@@ -11,7 +11,9 @@ import * as GE from "../../styles/globalElements";
 import * as S from "./styles";
 
 export const Post = ({ id, email, text }) => {
-	const comments = useTracker(() => CommentsCollection.find({ postId: id }).fetch());
+	const comments = useTracker(() =>
+		CommentsCollection.find({ postId: id }, { sort: { createdAt: -1 } }).fetch(),
+	);
 
 	return (
 		<S.Wrapper>
