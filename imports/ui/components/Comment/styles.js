@@ -22,5 +22,5 @@ export const Email = styled.strong`
 `;
 
 export const Description = styled.p`
-	margin: var(--small) 0;
+	margin: var(--extra-small) 0;
 `;

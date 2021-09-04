@@ -19,13 +19,6 @@ export const Content = styled.div`
 	justify-content: space-between;
 `;
 
-export const Image = styled.img`
-	width: 60px;
-	height: 60px;
-	margin-right: var(--small);
-	border-radius: 50%;
-`;
-
 export const Textarea = styled.textarea`
 	${InputDefaultStyles};
 

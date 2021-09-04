@@ -10,7 +10,7 @@ export const Post = ({ img, email, text, comments }) => {
 	return (
 		<S.Wrapper>
 			<S.Content>
-				<S.Image src={img} alt="Avatar" />
+				<GE.Image src={img} alt="Avatar" width={60} height={60} />
 				<div>
 					<S.Email>Email: {email}</S.Email>
 					<GE.Line />
@@ -22,7 +22,7 @@ export const Post = ({ img, email, text, comments }) => {
 
 			<S.CommentArea>
 				<S.MyComment>
-					<img src={img} width={40} height={40} />
+					<GE.Image src={img} width={40} height={40} />
 					<S.CommentWrapper>
 						<input placeholder="Type a comment..." />
 						<MdSend size={25} color="#166FE5" style={{ cursor: "pointer" }} />

@@ -7,6 +7,14 @@ export const Container = styled.div`
 	padding: var(--small);
 `;
 
+export const Image = styled.img`
+	width: ${({ width }) => width || "60px"};
+	height: ${({ height }) => height || "60px"};
+
+	margin-right: var(--small);
+	border-radius: 50%;
+`;
+
 export const Line = styled.div`
 	width: 100%;
 	height: 1px;
