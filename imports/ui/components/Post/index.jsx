@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Comment } from "../Comment";
+
 import * as S from "./styles";
 
 export const Post = ({ img, email, text, comments }) => {
@@ -23,13 +25,7 @@ export const Post = ({ img, email, text, comments }) => {
 
 				<S.CommentsList>
 					{comments.map(({ img, email, text }) => (
-						<S.Comment key={`${email} - ${text}`}>
-							<img src={img} width={40} height={40} />
-							<S.Ballon>
-								<S.Email>{email}</S.Email>
-								<S.Description>{text}</S.Description>
-							</S.Ballon>
-						</S.Comment>
+						<Comment key={`${email} - ${text}`} img={img} email={email} text={text} />
 					))}
 				</S.CommentsList>
 			</S.CommentArea>

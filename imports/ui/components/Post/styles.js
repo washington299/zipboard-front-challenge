@@ -67,19 +67,3 @@ export const CommentsList = styled.div`
 	display: flex;
 	flex-direction: column;
 `;
-
-export const Comment = styled.div`
-	display: flex;
-	margin-bottom: var(--small);
-
-	img {
-		border-radius: 50%;
-		margin-right: var(--extra-small);
-	}
-`;
-
-export const Ballon = styled.div`
-	padding: var(--extra-small);
-	background-color: #f0f2f5;
-	border-radius: var(--small);
-`;
