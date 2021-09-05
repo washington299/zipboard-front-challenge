@@ -36,6 +36,19 @@ meteor run
 
 now open http://localhost:3000 in your browser.
 
+You can also access the host project here: https://zipboard-challenge.meteorapp.com
+
+### Users created
+
+email: mykala@mykala.com
+password: 123
+
+email: pedro@pedro.com
+password: 123
+
+email: cloe@cloe.com
+password: 123
+
 ---
 
 made by Washington with ❤️.
